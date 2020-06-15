@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Sumiço da Coroa | O Restaurante</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;400;600;700&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+    <script src="senha.js" defer></script>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>
+                <div>O Sumiço da Coroa</div>
+                O Restaurante
+            </h1>
+    
+            <p>Após avaliarmos todas as informações coletadas até agora, acreditamos que a Coroa foi esquecida pela pessoa responsável, que parou para tomar um café em um restaurante.</p>
+    
+            <p>Temos apenas uma foto sem o nome deste local, mas sabemos que fica perto da casa do famoso detetive Sherlock Holmes.</p>
+    
+            <p>Clique em <b>Examinar o Local</b> abaixo para ir diretamente para a Baker Street, número 221B, em Londres.</p>
+
+            <p>Circule pela região, pode ser que este local fique perto e o nome dele seja nossa próxima pista!</p>
+        </div>
+
+        <section>
+            <div id="img_ctnr">
+                <img src="assets/o_restaurante.jpg" alt="">
+
+                <a href="https://www.google.com/maps/@51.5237851,-0.1582681,3a,15y,258.98h,86.64t/data=!3m6!1e1!3m4!1st7-AXrTzW7kN44vWBCffGQ!2e0!7i16384!8i8192" target="_blank">Examinar o Local</a>
+            </div>
+
+            <div id="comecar_ctnr">
+                <article id="comecar_divs">
+                    <div id="dica">
+                        <img src="assets/dica.svg" alt="">
+                    </div>
+
+                    <span>DESVENDOU?</span>
+
+                    <div id="proximo" href="2-o-cartao-postal.html">
+                        <input id="input_senha" type="text" placeholder="DIGITE A RESPOSTA..."/>
+                        <a id="input_anchor" href="#"></a>
+                    </div>
+                    <div id="ajuda">
+                        <img src="assets/ajuda.svg" alt="">
+                    </div>
+                </article>
+
+                <div id="dica_ctnr" class="msg_ctnr">
+                    <span>
+                        Talvez na esquina exista um local para comer e beber?
+                    </span>
+            
+                    <div class="fechar"></div>
+                </div>
+            
+                <div id="ajuda_ctnr" class="msg_ctnr">
+                    
+                </div>
+
+                <div id="resposta_ctnr" class="msg_ctnr">
+                    <span>
+                        A resposta é <b>thevolunteer</b>.<br/>
+                        Ao circularmos pela Baker Street, na esquina fica este restaurante icônico, onde podemos facilmente reconhecer seu nome.
+                    </span>
+
+                    <img src="assets/o_restaurante_dica.jpg" alt="">
+            
+                    <div class="fechar"></div>
+                </div>
+            </div>
+
+            <div id="revelar_senha">
+                <p>Tá difícil?</p>
+                <div>REVELAR A SENHA</div>
+            </div>
+        </section>
+    </main>
+
+    <div id="comecar_gradient"></div>
+
+    <span id="senha" title="thevolunteer"></span>
+    <span id="prox_pagina" title="6-o-cofre.html"></span>
+</body>
+</html>

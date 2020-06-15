@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Sumiço da Coroa | O Cartão Postal</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;400;600;700&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+    <script src="senha.js" defer></script>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>
+                <div>O Sumiço da Coroa</div>
+                O Cartão Postal
+            </h1>
+    
+            <p>O nosso primeiro desafio parece simples, mas vai exigir concentração e visão além do óbvio.</p>
+    
+            <p>Este é o cartão postal que encontramos no veículo que transportava o tesouro. Está marcado com símbolos estranhos na frente e no verso.</p>
+    
+            <p>O que será que estes símbolos significam?</p>
+        </div>
+
+        <section>
+            <div id="img_ctnr">
+                <img src="assets/cartao_postal01.jpg" alt="">
+                <img src="assets/cartao_postal02.jpg" alt="">
+            </div>
+
+            <div id="comecar_ctnr">
+                <article id="comecar_divs">
+                    <div id="dica">
+                        <img src="assets/dica.svg" alt="">
+                    </div>
+
+                    <span>DESVENDOU?</span>
+
+                    <div id="proximo" href="2-o-cartao-postal.html">
+                        <input id="input_senha" type="text" placeholder="DIGITE A RESPOSTA..."/>
+                        <a id="input_anchor" href="#"></a>
+                    </div>
+                    <div id="ajuda">
+                        <img src="assets/ajuda.svg" alt="">
+                    </div>
+                </article>
+
+                <div id="dica_ctnr" class="msg_ctnr">
+                    <span>
+                        Talvez estes símbolos se completem de alguma forma.
+                    </span>
+            
+                    <div class="fechar"></div>
+                </div>
+            
+                <div id="ajuda_ctnr" class="msg_ctnr">
+                    
+                </div>
+
+                <div id="resposta_ctnr" class="msg_ctnr">
+                    <span>A resposta é <b>ouro</b>. Ao completarmos os símbolos, formamos a palavra ouro.</span>
+            
+                    <div class="fechar"></div>
+                </div>
+            </div>
+
+            <div id="revelar_senha">
+                <p>Tá difícil?</p>
+                <div>REVELAR A SENHA</div>
+            </div>
+        </section>
+    </main>
+
+    <div id="comecar_gradient"></div>
+
+    <span id="senha" title="ouro"></span>
+    <span id="prox_pagina" title="3-a-midia-social.html"></span>
+</body>
+</html>

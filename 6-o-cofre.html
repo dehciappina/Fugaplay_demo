@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Sumiço da Coroa | O Cofre</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;400;600;700&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+    <script src="senha.js" defer></script>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>
+                <div>O Sumiço da Coroa</div>
+                O Cofre
+            </h1>
+    
+            <p>No restaurante localizado, encontramos um cofre antigo, trancado. Pode ser a caixa-forte que está sendo utilizada para transportar a Coroa.</p>
+    
+            <p>Não sabemos como abri-lo, mas devemos tomar cuidado para não forçar nenhuma parte, pois há o risco de danificar o que estiver dentro.</p>
+    
+            <p>Ao seu lado há um celular, verificamos que ele recebeu uma mensagem. Será que é o que precisamos para abrir o cofre?</p>
+        </div>
+
+        <section>
+            <div id="img_ctnr">
+                <img src="assets/o_cofre_01.jpg" alt="">
+                <img src="assets/o_cofre_02.png" class="img01" alt="">
+            </div>
+
+            <div id="comecar_ctnr">
+                <article id="comecar_divs">
+                    <div id="dica">
+                        <img src="assets/dica.svg" alt="">
+                    </div>
+
+                    <span>DESVENDOU?</span>
+
+                    <div id="proximo" href="2-o-cartao-postal.html">
+                        <input id="input_senha" type="text" placeholder="DIGITE A RESPOSTA..."/>
+                        <a id="input_anchor" href="#"></a>
+                    </div>
+                    <div id="ajuda">
+                        <img src="assets/ajuda.svg" alt="">
+                    </div>
+                </article>
+
+                <div id="dica_ctnr" class="msg_ctnr">
+                    <span>
+                        Aparentemente precisamos de um código de 4 letras. Mas como converter os números da mensagem em letras?
+                    </span>
+            
+                    <div class="fechar"></div>
+                </div>
+            
+                <div id="ajuda_ctnr" class="msg_ctnr"></div>
+                
+                <div id="resposta_ctnr" class="msg_ctnr">
+                    <span>
+                        A resposta é <b>real</b>.<br/>
+                        Ao circularmos pela Baker Street, na esquina fica este restaurante icônico, onde podemos facilmente reconhecer seu nome.
+                    </span>
+
+                    <div class="fechar"></div>
+                </div>
+            </div>
+
+            <div id="revelar_senha">
+                <p>Tá difícil?</p>
+                <div>REVELAR A SENHA</div>
+            </div>
+        </section>
+    </main>
+
+    <div id="comecar_gradient"></div>
+
+    <span id="senha" title="real"></span>
+    <span id="prox_pagina" title="7_a_solucao.html"></span>
+</body>
+</html>

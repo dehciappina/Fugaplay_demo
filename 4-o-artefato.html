@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Sumiço da Coroa | O Artefato</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;400;600;700&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+    <script src="senha.js" defer></script>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>
+                <div>O Sumiço da Coroa</div>
+                O Artefato
+            </h1>
+    
+            <p>Este documento parece ser importante para o transporte, mas não conseguimos identificar nada que nos ajudasse.</p>
+    
+            <p>Junto com o documento, está um artefato estranho, um disco giratório com todo o alfabeto.</p>
+    
+            <p>Filmamos o funcionamento deste artefato para te apoiar a decodificar documento, clique em <b>assistir ao vídeo</b> abaixo.</p>
+        </div>
+
+        <section>
+            <div id="img_ctnr">
+                <img src="assets/o_artefato.jpg" alt="">
+
+                <a href="https://www.youtube.com/watch?v=cISG3X1alWA&feature=youtu.be" target="_blank">Assistir Vídeo</a>
+            </div>
+
+            <div id="comecar_ctnr">
+                <article id="comecar_divs">
+                    <div id="dica">
+                        <img src="assets/dica.svg" alt="">
+                    </div>
+
+                    <span>DESVENDOU?</span>
+
+                    <div id="proximo" href="2-o-cartao-postal.html">
+                        <input id="input_senha" type="text" placeholder="DIGITE A RESPOSTA..."/>
+                        <a id="input_anchor" href="#"></a>
+                    </div>
+                    <div id="ajuda">
+                        <img src="assets/ajuda.svg" alt="">
+                    </div>
+                </article>
+
+                <div id="dica_ctnr" class="msg_ctnr">
+                    <span>
+                        Estas etiquetas amarelas coladas no documento parecem ter sido coladas depois. Talvez elas possam ser decodificadas com mais facilidade se assistir ao vídeo.
+                    </span>
+            
+                    <div class="fechar"></div>
+                </div>
+            
+                <div id="ajuda_ctnr" class="msg_ctnr">
+                    
+                </div>
+
+                <div id="resposta_ctnr" class="msg_ctnr">
+                    <span>A resposta é <b>cafe</b><br/>
+                        Ao colocarmos o disco que aparece no vídeo na posição onde o H pequeno (disco interno) combina com o S grande (disco externo), podemos trocar as demais letras.
+                        <br/>
+                        N=C
+                        <br/>
+                        L=A
+                        <br/>
+                        Q=F
+                        <br/>
+                        P=E
+                    </span>
+
+                    <img src="assets/o_artefato_dica.jpg" alt="">
+            
+                    <div class="fechar"></div>
+                </div>
+            </div>
+
+            <div id="revelar_senha">
+                <p>Tá difícil?</p>
+                <div>REVELAR A SENHA</div>
+            </div>
+        </section>
+    </main>
+
+    <div id="comecar_gradient"></div>
+
+    <span id="senha" title="cafe"></span>
+    <span id="prox_pagina" title="5-o-restaurante.html"></span>
+</body>
+</html>

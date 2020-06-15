@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Sumiço da Coroa | Fugaplay</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+
+    <script>
+        setTimeout(() => {
+            if(dicaShowing == false) {
+                toggleDica()
+            }
+        }, 10000);
+    </script>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>A Coroa Sumiu!</h1>
+    
+            <p>Durante o transporte entre o Palácio e o Cofre da Torre, o maior símbolo da realeza britânica foi extraviado. A Coroa Imperial do Estado, uma das joias mais valiosas e importantes do Tesouro Real simplesmente desapareceu!</p>
+    
+            <p>Para evitar tentativas de roubo, os documentos são decodificados, mas a pessoa responsável também está desaparecida. Não temos pistas mas precisamos recuperar a coroa com máxima urgência!</p>
+    
+            <p>PRECISAMOS DE SUA AJUDA!</p>
+        </div>
+
+        <section>
+            <h2>Como Funciona</h2>
+
+            <div id="como_funciona">
+                <div>
+                    <img src="assets/info_icon.svg" alt="">
+                    <h3>Informações</h3>
+                    <p>As informações são os elementos dos enigmas, que devem ser analisados e decodificados.</p>
+                    <p>Podem ser textos, imagens, áudios, vídeos, animações, posts e mídias sociais e links diversos</p>
+                </div>
+                
+                <div>
+                    <img src="assets/senha_icon.svg" alt="">
+                    <h3>Senhas</h3>
+                    <p>As senhas são nomes, números ou sequências alfanuméricas.</p>
+                    <p>São compostas apenas de letras e números, sempre em minúsculas, sem acentos e sem espaços.</p>
+                </div>
+                
+                <div>
+                    <img src="assets/avancar_icon.svg" alt="">
+                    <h3>Avançando</h3>
+                    <p>Ao descobrir uma senha, clique em avançar e digite-a na página seguinte.</p>
+                    <p>Se estiver certa, a página abrirá e relevará informações novas. Se não estiver, continuará pedindo a senha.</p>
+                </div>
+                
+                <div>
+                    <img src="assets/dica.svg" alt="">
+                    <h3>Dica</h3>
+                    <p>Em cada página há o recurso de receber uma dica para ajudar na solução do enigma em questão.</p>
+                    <p>O texto fica escondido para evitar spoilers, basta clicar para lê-lo.</p>
+                </div>
+                
+                <div>
+                    <img src="assets/resposta_icon.svg" alt="">
+                    <h3>Resposta</h3>
+                    <p>Em cada página há o recurso de acessar a resposta do enigma em questão, isto é, a senha da etapa seguinte.</p>
+                    <p>O texto fica escondido para evitar spoilers, basta clicar para lê-lo.</p>
+                </div>
+                
+            </div>
+
+            <div id="comecar_ctnr">
+                <article id="comecar_divs">
+                    <div id="dica">
+                        <img src="assets/dica.svg" alt="">
+                    </div>
+                    <a id="proximo" href="2-o-cartao-postal.html">
+                        <span>JOGAR</span>
+                    </a>
+                    <div id="ajuda">
+                        <img src="assets/ajuda.svg" alt="">
+                    </div>
+                </article>
+
+                <div id="dica_ctnr" class="msg_ctnr">
+                    <span>
+                        Se precisar de um empurrãozinho, você pode clicar no ícone de lâmpada para receber uma dica sobre o desafio em que está.
+                    </span>
+            
+                    <div class="fechar"></div>
+                </div>
+            
+                <div id="ajuda_ctnr" class="msg_ctnr">
+                    
+                </div>
+            </div>
+        </section>
+
+        <article id="comecar_gradient"></article>
+    </main>
+</body>
+</html>
