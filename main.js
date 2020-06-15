@@ -1,3 +1,12 @@
+const preBg = document.querySelector('#pre_bg');
+
+
+document.onreadystatechange = function () {
+    if (document.readyState == "interactive" || document.readyState == "complete") {
+        preBg.style.visibility = 'hidden';
+        preBg.style.opacity = 0;
+    }
+}
 
 
 const dicaBt = document.querySelector('#dica');
@@ -28,16 +37,16 @@ for (i = 0; i < fechar.length; ++i) {
         ajudaShowing = false;
         ajudactnr.style.opacity = 0;
         ajudactnr.style.visibility = 'hidden';
-        ajudactnr.style.transform = 'translateY(2rem)';
+        ajudactnr.style.transform = 'scale(0.1) translateY(2rem)';
         dicaShowing = false;
         dicactnr.style.opacity = 0;
         dicactnr.style.visibility = 'hidden';
-        dicactnr.style.transform = 'translateY(2rem)'
+        dicactnr.style.transform = 'scale(0.1) translateY(2rem)'
         if(respostactnr) {
             senhaShowing = false;
             respostactnr.style.opacity = 0;
             respostactnr.style.visibility = 'hidden';
-            respostactnr.style.transform = 'translateY(2rem)'
+            respostactnr.style.transform = 'scale(0.1) translateY(2rem)'
         }
     });
 }
@@ -46,7 +55,7 @@ function toggleDica() {
     ajudaShowing = false;
     ajudactnr.style.opacity = 0;
     ajudactnr.style.visibility = 'hidden';
-    ajudactnr.style.transform = 'translateY(2rem)'
+    ajudactnr.style.transform = 'scale(0.1) translateY(2rem)'
     if(dicaShowing == false) {
         dicaShowing = true;
         dicactnr.style.opacity = 1;
@@ -56,13 +65,13 @@ function toggleDica() {
         dicaShowing = false;
         dicactnr.style.opacity = 0;
         dicactnr.style.visibility = 'hidden';
-        dicactnr.style.transform = 'translateY(2rem)'
+        dicactnr.style.transform = 'scale(0.1) translateY(2rem)'
     }
     if(respostactnr) {
         senhaShowing = false;
         respostactnr.style.opacity = 0;
         respostactnr.style.visibility = 'hidden';
-        respostactnr.style.transform = 'translateY(2rem)'
+        respostactnr.style.transform = 'scale(0.1) translateY(2rem)'
     }
 }
 
@@ -70,7 +79,7 @@ function toggleAjuda() {
     dicaShowing = false;
     dicactnr.style.opacity = 0;
     dicactnr.style.visibility = 'hidden';
-    dicactnr.style.transform = 'translateY(2rem)'
+    dicactnr.style.transform = 'scale(0.1) translateY(2rem)'
     if(ajudaShowing == false) {
         ajudaShowing = true;
         ajudactnr.style.opacity = 1;
@@ -80,12 +89,12 @@ function toggleAjuda() {
         ajudaShowing = false;
         ajudactnr.style.opacity = 0;
         ajudactnr.style.visibility = 'hidden';
-        ajudactnr.style.transform = 'translateY(2rem)'
+        ajudactnr.style.transform = 'scale(0.1) translateY(2rem)'
     }
     if(respostactnr) {
         senhaShowing = false;
         respostactnr.style.opacity = 0;
         respostactnr.style.visibility = 'hidden';
-        respostactnr.style.transform = 'translateY(2rem)'
+        respostactnr.style.transform = 'scale(0.1) translateY(2rem)'
     }
 }

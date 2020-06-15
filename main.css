@@ -2,6 +2,20 @@ html {
     font-size:14px;
 }
 
+#pre_bg {
+    background: #432050;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity:1;
+    visibility: visible;
+    transition:opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 body {
     background-color: #E0E0E0;
     font-family: 'Open Sans', sans-serif;
@@ -36,20 +50,20 @@ a {
 main {
     background-color: white;
     width: calc(100% - 3rem);
-    max-width: 38rem;
+    max-width: 50rem;
     margin: 1.5rem auto;
     box-sizing: border-box;
     border-radius: 2rem;
 } main > div {
     margin-bottom: 2rem;
 } main > div p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 2rem;
     text-align: justify;
     letter-spacing: -0.4px;
     margin: 0 auto 1rem auto;
     max-width: 60rem;
-    padding: 0 2rem;
+    padding: 0 1.7rem;
 }
 
 
@@ -70,7 +84,7 @@ section {
     margin-bottom: 1rem;
 } #img_ctnr a {
     text-align: center;
-    background: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 1rem 2rem;
     border-radius: 0.4rem;
     display: block;
@@ -79,10 +93,10 @@ section {
     margin: 2rem 0 1rem 0;
     position: relative;
     color: #432050;
-    transition:0.3s ease;
+    transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease;
 } #img_ctnr a:hover {
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
+    background-color: rgba(255,255,255, 0.5);
+    color: #fff;
     border: 0.1rem solid white;
 }
 
@@ -91,8 +105,8 @@ section {
 } #como_funciona div {
     margin-bottom: 3rem;
 } #como_funciona div img {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.3rem;
+    height: 2.3rem;
     margin: 0 auto;
     display: block;
 } #como_funciona div h3 {
@@ -113,6 +127,7 @@ section {
 }
 
 #comecar_ctnr {
+    height: 16vh;
     z-index: 2;
 } #comecar_ctnr, #comecar_gradient {
     position: fixed;
@@ -121,8 +136,9 @@ section {
     left: 0;
 } #comecar_divs {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 80%;
     max-width: 30rem;
     height: 3.5rem;
     margin: 0 auto;
@@ -134,17 +150,19 @@ section {
     border-radius: 3rem;
     height: 100%;
 } #comecar_divs > div:not(#proximo) {
-    width: 3.5rem;
+    width: 2.8rem;
+    height: 2.8rem;
     background: #60506C;
-    border: 0.15rem solid white;
+    border: 0.1rem solid white;
     box-sizing: border-box;
     transition: background-color 0.3s ease;
+    box-shadow: 0 0 1.5rem -0.5rem white;
 }  #comecar_divs > div:not(#proximo):hover {
     background-color: #755490;
     transform: scale(1.1);
 }  #comecar_divs img {
     width: 100%;
-    height: 1.6rem;
+    height: 1.5rem;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -157,7 +175,7 @@ section {
     line-height: 1.5rem;
     color: #00bab5;
     font-weight: 900;
-    transform: translateY(-110%);
+    transform: translateY(-2.6rem);
     letter-spacing: 0.1rem;
     text-shadow: 0 0 0.5rem black;
 }
@@ -166,7 +184,7 @@ section {
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 65%;
     background: #00bab5;
     font-weight: 600;
     color: white;
@@ -229,6 +247,8 @@ section {
     border-radius: 1rem;
     font-size: 1.2rem;
     transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 1;
 } #revelar_senha div:hover {
     background: #9F81FF;
 }
@@ -238,7 +258,7 @@ section {
     width: 80%;
     max-height: 70vh;
     overflow-y: auto;
-    margin: 0 auto 2rem auto;
+    margin: 0 auto 4rem auto;
     box-shadow: 0 1rem 2rem #437;
     left: 1rem;
     right: 1rem;
@@ -249,10 +269,11 @@ section {
     text-align: center;
     font-size: 1.1rem;
     border-radius: 1rem;
-    transform: translateY(2rem);
+    transform: scale(0.1) translateY(2rem);
+    transform-origin: 50% 100%;
     opacity:0;
     visibility:hidden;
-    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, visibility 0.3s ease;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease-in, visibility 0.3s ease-in;
     padding: 1rem;
     border: 0.2rem solid #8769F7;
 } .msg_ctnr span {
@@ -367,7 +388,6 @@ section {
     #img_ctnr {
         min-height: 100%;
         box-sizing: border-box;
-        margin-bottom: 10rem;
     }
 
     .fechar {
@@ -419,7 +439,7 @@ section {
 
 
 
-@media (min-width:130vh) and (min-height:300px) {
+@media (min-width:130vh) and (min-height:300px) and (min-width:700px) {
     body {
         padding-bottom: unset;
     }
@@ -432,6 +452,8 @@ section {
         margin: 3rem auto;
     } main > div {
         width: 50%;
+        max-height: 85%;
+        overflow: auto;
     } main > div p {
         font-size: 1.2rem;
         width: 75%;
@@ -456,11 +478,12 @@ section {
     }
 
     #comecar_ctnr, #comecar_gradient {
-        position: sticky;
+        right: 5rem;
+        left: 50%;    
+        bottom: 3rem;
     } #comecar_divs {
         width: 80%;
         height: 4rem;
-        align-items: center;
         max-width: unset;
     } #comecar_gradient {
         position: fixed;
@@ -469,13 +492,9 @@ section {
         right: 5rem;
         left: calc(50% - 0rem);
         border-radius: 2rem;
-        background: linear-gradient(0deg, #201131, rgba(32, 17, 49, 0.6) 20%, transparent 30%, transparent 85%, #201131 100%);
+        background: linear-gradient(0deg, #201131, rgba(32, 17, 49, 0.6) 20%, transparent 30%, transparent 85%, #340A42 100%);
     } #comecar_divs > span {
         align-self: baseline;
-    }
-    
-    #como_funciona {
-        padding-bottom: 10rem;
     }
 
     #comecar_divs > div {
@@ -496,7 +515,7 @@ section {
     } #proximo input::placeholder {
         color:#aaa;
         font-weight: 400;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     } #proximo a {
         width: 2.8rem;
         height: 2.8rem;
@@ -504,7 +523,7 @@ section {
         right: 0.6rem;
     } #proximo span {
         line-height: 3.3rem;
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     #revelar_senha {
@@ -580,20 +599,20 @@ section {
 
 
 
-@media (min-width:170vh) and (min-height:300px) {
+@media (min-width:170vh) and (min-height:300px) and (min-width:700px)  {
     main > div {
         width:38%;
     }
 
     section {
         width:62%;
+        padding-bottom: 9rem;
     }
     
 
     #como_funciona {
         display: grid;
         grid-template-columns: 50% 50%;
-        padding-bottom: 7rem;
         width: 90%;
         margin: 0 auto;
     }
@@ -608,6 +627,10 @@ section {
     } #comecar_divs > span {
         font-size: 1rem;
         line-height: 2rem;
+    } #comecar_ctnr, #comecar_gradient {
+        right: 5rem;
+        left: calc(38% + 1rem);
+        bottom: 3rem;
     }
 
     #proximo a {
@@ -618,17 +641,17 @@ section {
     } #proximo input {
         font-size: 1.3vw;
     } #proximo span {
-        line-height: 4rem;
+        line-height: 4.2rem;
     }
     
 
     #img_ctnr {
         width: 80%;
-    } #img_ctnr img:first-child {
+    } .margin_bottom_img {
         margin-bottom: 3rem;
     } #img_ctnr a {
         width: 30%;
-        margin: 0 auto;
+        margin: 2rem auto 0 auto;
         font-size: 1.2rem;
         padding: 0.8rem;
         box-sizing: border-box;
@@ -658,3 +681,34 @@ section {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-height:1000px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media (max-height:640px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-height:360px) {
+    html {
+        font-size: 9px;
+    }
+}

@@ -23,7 +23,7 @@ inputSenha.addEventListener('keyup', function (evt) {
     
             indicadorReposta.textContent = "VOCÊ ACERTOU!";
             indicadorReposta.style.color = "limegreen";
-        }, 100);
+        }, 200);
     } else {
         inputAnchor.setAttribute('href', '#');
         indicadorReposta.textContent = "DESVENDOU?";
@@ -62,6 +62,6 @@ revelar.addEventListener('click', function() {
         senhaShowing = false;
         respostactnr.style.opacity = 0;
         respostactnr.style.visibility = 'hidden';
-        respostactnr.style.transform = 'translateY(2rem)'
+        respostactnr.style.transform = 'scale(0.1) translateY(2rem)'
     }
 })
