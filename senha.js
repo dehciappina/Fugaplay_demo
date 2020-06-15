@@ -12,13 +12,12 @@ const indicadorReposta = document.querySelector('#comecar_divs > span');
 inputSenha.focus();
 
 inputSenha.addEventListener('keyup', function (evt) {
-    console.log(inputSenha.value)
-
     if(inputSenha.value == senha.getAttribute('title')) {
         inputAnchor.setAttribute('href', proxPagina.getAttribute('title'));
 
         setTimeout(() => {
             proximo.style.backgroundColor = "limegreen";
+            proximo.style.boxShadow = "0 0 1rem limegreen";
             proximoA.style.backgroundColor = "limegreen";
     
             indicadorReposta.textContent = "VOCÊ ACERTOU!";
@@ -30,6 +29,7 @@ inputSenha.addEventListener('keyup', function (evt) {
         indicadorReposta.style.color = "#00bab5";
         
         proximo.style.backgroundColor = "#00bab5";
+        proximo.style.boxShadow = "0 0 1rem transparent";
         proximoA.style.backgroundColor = "#00bab5";
     }
 });
@@ -41,6 +41,7 @@ inputAnchor.addEventListener('click', function() {
         proximo.style.backgroundColor = "limegreen"
         proximoA.style.backgroundColor = "limegreen"
     } else {
+        proximo.style.boxShadow = "0 0 1rem #E44";
         proximo.style.backgroundColor = "#E44"
         proximoA.style.backgroundColor = "#E44"
         inputSenha.value = ""
