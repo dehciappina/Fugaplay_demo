@@ -354,7 +354,7 @@ section {
 
 
 
-@media (min-width:100vh) {
+@media (min-width:100vh) and (min-height:300px) {
     
     #como_funciona div h3 {
         font-size: 1.6rem;
@@ -415,7 +415,7 @@ section {
 
 
 
-@media (min-width:130vh) {
+@media (min-width:130vh) and (min-height:300px) {
     body {
         padding-bottom: unset;
     }
@@ -575,7 +575,7 @@ section {
 
 
 
-@media (min-width:170vh) {
+@media (min-width:170vh) and (min-height:300px) {
     main > div {
         width:38%;
     }
