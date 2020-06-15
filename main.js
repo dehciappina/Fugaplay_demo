@@ -25,9 +25,11 @@ const fechar = document.querySelectorAll('.fechar');
 
 for (i = 0; i < fechar.length; ++i) {
     fechar[i].addEventListener('click', function() {
+        ajudaShowing = false;
         ajudactnr.style.opacity = 0;
         ajudactnr.style.visibility = 'hidden';
-        ajudactnr.style.transform = 'translateY(2rem)'
+        ajudactnr.style.transform = 'translateY(2rem)';
+        dicaShowing = false;
         dicactnr.style.opacity = 0;
         dicactnr.style.visibility = 'hidden';
         dicactnr.style.transform = 'translateY(2rem)'
