@@ -11,7 +11,7 @@ const indicadorReposta = document.querySelector('#comecar_divs > span');
 
 inputSenha.focus();
 
-inputSenha.addEventListener('input', function (evt) {
+inputSenha.addEventListener('keyup', function (evt) {
     console.log(inputSenha.value)
 
     if(inputSenha.value == senha.getAttribute('title')) {
