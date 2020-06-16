@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5 {
 
 h1, h2 {
     font-size: 2.5rem;
-    padding-top: 4rem;
+    padding-top: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -304,15 +304,28 @@ section {
 
 #solucao_h1 {
     font-size: 3rem;
+    padding-top: 3rem;
 } #solucao_h1 div {
     font-size: 1.6rem;
+    line-height: 0.6rem;
 }
-
 
 .img01 {
     width: 70%;
 }
 
+#marcacao {
+    margin: 0 auto;
+    max-width: 20%;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 0 0 0.5rem 0.5rem;
+    text-align: center;
+    color: white;
+    padding: 0.4rem 1rem;
+    background: linear-gradient(180deg, #6547D5, #8769F7);
+}
 
 ::-webkit-scrollbar {
     width: 1rem;
@@ -440,7 +453,7 @@ section {
 
 
 
-@media (min-width:130vh) and (min-height:300px) and (min-width:640px) {
+@media (min-width:130vh) {
     body {
         padding-bottom: unset;
     }
@@ -467,8 +480,8 @@ section {
         text-align: left;
         margin-left: 4rem;
         font-size: 2.8rem;
-        margin-bottom: 3rem;
-        padding-top: 4rem;
+        margin-bottom: 2rem;
+        padding-top: 5rem;
     }
 
     section {
@@ -571,6 +584,16 @@ section {
 
     .fechar {
         cursor: pointer;
+    }
+
+    #marcacao {
+        position: absolute;
+        top: unset;
+        left: 5rem;
+        padding: 0.5rem 2rem 0.5rem 4rem;
+        border-radius: 2rem 0 0.8rem 0;
+        cursor: default;
+        background: linear-gradient(90deg, #6547D5, #8769F7);
     }
 }
 
@@ -732,7 +755,7 @@ section {
 
 
 
-@media (min-width:150vh) and (max-width:900px) {
+@media (min-width:130vh) and (max-width:900px) {
     html {
         font-size:10px;
     }
@@ -752,5 +775,11 @@ section {
         top: 2rem;
         bottom: 2rem;
         right: 3rem;
+    }
+}
+
+@media (min-width:130vh) and (max-height:320px) {
+    html {
+        font-size: 1.5vw;
     }
 }
