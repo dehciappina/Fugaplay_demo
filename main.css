@@ -314,7 +314,7 @@ section {
     width: 70%;
 }
 
-#marcacao {
+/* #marcacao {
     margin: 0 auto;
     max-width: 20%;
     display: block;
@@ -325,6 +325,30 @@ section {
     color: white;
     padding: 0.4rem 1rem;
     background: linear-gradient(180deg, #6547D5, #8769F7);
+} */
+
+#marcacao {
+    position: relative;
+    width: 80%;
+    max-width: 20rem;
+    padding-top: 1.5rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#marcacao img {
+    height: 100%;
+}
+
+.cadeado {
+    width: 1.4rem;
+}
+
+.dot {
+    margin-top: 0.5rem;
+    width: 0.6rem;
 }
 
 ::-webkit-scrollbar {
@@ -586,7 +610,7 @@ section {
         cursor: pointer;
     }
 
-    #marcacao {
+    /* #marcacao {
         position: absolute;
         top: unset;
         left: 5rem;
@@ -594,6 +618,28 @@ section {
         border-radius: 2rem 0 0.8rem 0;
         cursor: default;
         background: linear-gradient(90deg, #6547D5, #8769F7);
+    } */
+
+    #marcacao {
+        position: absolute;
+        left: 5rem;
+        margin-left: 4rem;
+        min-width: 20rem;
+        max-width: 25rem;
+        justify-content: end;
+    }
+
+    .cadeado {
+        width: 1.2rem;
+    }
+
+    .dot {
+        margin-top: 0.4rem;
+        width: 0.5rem;
+    }
+
+    #marcacao img {
+        margin-right: 1rem;
     }
 }
 
