@@ -362,12 +362,12 @@ section {
 }
 
 .cadeado {
-    width: 1.4rem;
+    width: 1.3rem;
 }
 
 .dot {
     margin-top: 0.5rem;
-    width: 0.6rem;
+    width: 0.5rem;
 }
 
 ::-webkit-scrollbar {
