@@ -13,15 +13,33 @@ html {
     opacity:1;
     visibility: visible;
     transition:opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+}
+
+#porta_solucao {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(-90deg, #432050, #0A0017);
+    z-index: 2;
+    transform: rotateY(0);
+    transform-origin: left;
+    transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 body {
     background-color: #E0E0E0;
     font-family: 'Open Sans', sans-serif;
-    padding-bottom: 8rem;
+    padding: 1.5rem 1.5rem 8rem 1.5rem;
 } body, p, h1, h2, h3, h4, h5 {
     margin:0;
+} #solution_body {
+    perspective: 2500px;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 
@@ -49,9 +67,7 @@ a {
 
 main {
     background-color: white;
-    width: calc(100% - 3rem);
     max-width: 50rem;
-    margin: 1.5rem auto;
     box-sizing: border-box;
     border-radius: 2rem;
 } main > div {
@@ -64,6 +80,9 @@ main {
     margin: 0 auto 1rem auto;
     max-width: 60rem;
     padding: 0 1.7rem;
+} #solution_main {
+    transition:transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(0.8);
 }
 
 
@@ -480,6 +499,7 @@ section {
 @media (min-width:130vh) {
     body {
         padding-bottom: unset;
+        padding: 3rem 0;
     }
 
     main {
@@ -487,7 +507,7 @@ section {
         width: calc(100% - 10rem);
         max-width: unset;
         height: calc(100vh - 6rem);
-        margin: 3rem auto;
+        margin: 0 auto;
     } main > div {
         width: 50%;
         max-height: 85%;
@@ -526,8 +546,10 @@ section {
         max-width: unset;
     } #comecar_gradient {
         position: fixed;
-        top: 3rem;
-        bottom: 3rem;
+        margin-top: 3rem;
+        top: 0;
+        margin-bottom: 3rem;
+        bottom: 0;
         right: 5rem;
         left: calc(50% - 0rem);
         border-radius: 2rem;
@@ -626,7 +648,7 @@ section {
         margin-left: 4rem;
         min-width: 20rem;
         max-width: 25rem;
-        justify-content: end;
+        justify-content: flex-start;
     }
 
     .cadeado {
@@ -700,7 +722,6 @@ section {
     } #comecar_ctnr, #comecar_gradient {
         right: 5rem;
         left: calc(38% + 1rem);
-        bottom: 3rem;
     }
 
     #proximo a {
